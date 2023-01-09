@@ -3,15 +3,11 @@ function reset(){
     document.getElementById('oppLP').value = document.getElementById('oppLP').defaultValue;
 }
 
-function increment(param){
-    document.getElementById(`${param}`).stepUp();
+function increment(param, step){
+    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) + parseInt(document.getElementById(`${step}`).value);
 }
 
-function decrement(param){
-    document.getElementById(`${param}`).stepDown();
+function decrement(param, step){
+    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) - parseInt(document.getElementById(`${step}`).value);
 }
 
-function newStep(param1, param2, size){
-    document.getElementById(`${param1}`).step = size;
-    document.getElementById(`${param2}`).step = size;
-}

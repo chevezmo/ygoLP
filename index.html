@@ -31,42 +31,20 @@
         <div class="row">
 
             <div class="col-2">
-                <button onclick="decrement('playerLP')" class="btn btn-dark">-</button>
-                <input type="number" id="playerLP" value="8000" min="0" step="1000" max="99999" readonly>
-                <button onclick="increment('playerLP')" class="btn btn-dark">+</button>
+                <button onclick="decrement('playerLP', 'stepSize')" class="btn btn-dark">-</button>
+                <input type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
+                <button onclick="increment('playerLP', 'stepSize')" class="btn btn-dark">+</button>
             </div>
             
             <div class="col-2">
-                <button onclick="decrement('oppLP')" class="btn btn-dark">-</button>
-                <input type="number" id="oppLP" value="8000" min="0" step="1000" max="99999" readonly>
-                <button onclick="increment('oppLP')" class="btn btn-dark">+</button>
+                <button onclick="decrement('oppLP','stepSize')" class="btn btn-dark">-</button>
+                <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
+                <button onclick="increment('oppLP','stepSize')" class="btn btn-dark">+</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-6">
-
-                <div>
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 2000)" class="btn-check" name="options" id="2000LP" autocomplete="off">
-                    <label class="btn btn-secondary" for="2000LP">2000</label>
-                    
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 1000)" class="btn-check" name="options" id="1000LP" autocomplete="off" checked>
-                    <label class="btn btn-secondary" for="1000LP">1000</label>
-                    
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 500)" class="btn-check" name="options" id="500LP" autocomplete="off">
-                    <label class="btn btn-secondary" for="500LP">500</label>
-                    
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 100)" class="btn-check" name="options" id="100LP" autocomplete="off">
-                    <label class="btn btn-secondary" for="100LP">100</label>
-
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 50)" class="btn-check" name="options" id="50LP" autocomplete="off">
-                    <label class="btn btn-secondary" for="50LP">50</label>
-
-                    <input type="radio" onclick="newStep('playerLP', 'oppLP', 25)" class="btn-check" name="options" id="25LP" autocomplete="off">
-                    <label class="btn btn-secondary" for="25LP">25</label>
-                </div>
-                
-            </div>
+            <input type="number" id="stepSize" value="0" min="0" step="1" max="99999">
         </div>
 
         <div class="row">
