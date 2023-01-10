@@ -59,11 +59,11 @@
             <div class="w-100"></div>
 
             <div class="col">
-                <button onclick="decrement('playerLP', 'stepSize')" class="btn btn-primary w-75"> - </button>
+                <button onclick="decrement('playerLP')" class="btn btn-primary w-75"> - </button>
             </div>
             
             <div class="col">
-                <button onclick="decrement('oppLP','stepSize')" class="btn btn-danger w-75"> - </button>
+                <button onclick="decrement('oppLP')" class="btn btn-danger w-75"> - </button>
             </div>
 
             <div class="w-100"></div>
@@ -88,6 +88,16 @@
 
             <div class="col">
                 <input type="button" onclick="newMatch()" value="New Match">
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <p id="playerLog"></p>
+            </div>
+
+            <div class="col">
+                <p id="oppLog"></p>
             </div>
 
         </div>
