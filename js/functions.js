@@ -29,8 +29,8 @@ function decrement(param){
 
 function log(param, previous, damage){
     if(param == "playerLP"){
-        document.getElementById("playerLog").innerHTML = document.getElementById("playerLog").innerHTML + "<br />" + previous + "->" + damage;
+        document.getElementById("playerLog").innerHTML = document.getElementById("playerLog").innerHTML + "<br />" + previous + " -> " + damage;
     } else {
-        document.getElementById("oppLog").innerHTML = document.getElementById("oppLog").innerHTML + "<br />" + previous + "->" + damage;
+        document.getElementById("oppLog").innerHTML = document.getElementById("oppLog").innerHTML + "<br />" + previous + " -> " + damage;
     }
 }
