@@ -14,15 +14,9 @@
   </head>
   <body>
 
-    <div class="container-fluid justify-content-between">
+    <div class="container-fluid">
 
         <div class="row justify-content-md-center">
-
-            <div class="col">
-                
-            </div>
-
-            <div class="w-100"></div>
 
             <div class="col">
                 <input type="text" id="playerName" maxlength="8" size="7" placeholder="Player">
@@ -30,7 +24,7 @@
             <div class="col">
                 <input type="text" id="oppName" maxlength="8" size="7" placeholder="Opponent">
             </div>
-            
+
             <div class="w-100"></div>
 
             <div class="col">
@@ -45,19 +39,35 @@
 
             <div class="w-100"></div>
 
-            
+            <div class="col">
+                <button onclick="increment('playerLP', 'stepSize')" class="btn btn-primary w-50">+</button>
+            </div>
 
             <div class="col">
-                <button onclick="decrement('playerLP', 'stepSize')" class="btn btn-primary btn-lg"> - </button>
+                <button onclick="increment('oppLP','stepSize')" class="btn btn-danger w-50">+</button>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
                 <input type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
-                <button onclick="increment('playerLP', 'stepSize')" class="btn btn-primary btn-lg">+</button>
+            </div>
+
+            <div class="col">
+                <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <button onclick="decrement('playerLP', 'stepSize')" class="btn btn-primary w-50"> - </button>
             </div>
             
             <div class="col">
-                <button onclick="decrement('oppLP','stepSize')" class="btn btn-danger btn-lg"> - </button>
-                <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
-                <button onclick="increment('oppLP','stepSize')" class="btn btn-danger btn-lg">+</button>
+                <button onclick="decrement('oppLP','stepSize')" class="btn btn-danger w-50"> - </button>
             </div>
+
+            
 
             <div class="w-100"></div>
 
