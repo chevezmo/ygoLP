@@ -12,10 +12,10 @@ function newMatch(){
 }
 
 function increment(param, step){
-    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) + parseInt(document.getElementById(`${step}`).value);
+    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) + (parseInt(document.getElementById(`${step}`).value) || 0);
 }
 
 function decrement(param, step){
-    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) - parseInt(document.getElementById(`${step}`).value);
+    document.getElementById(`${param}`).value =  parseInt(document.getElementById(`${param}`).value) - (parseInt(document.getElementById(`${step}`).value) || 0);
 }
 
