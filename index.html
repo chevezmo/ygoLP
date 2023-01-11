@@ -16,7 +16,7 @@
 
     <div class="container-fluid">
 
-        <div class="row justify-content-md-center">
+        <div class="row mt-2 justify-content-md-center">
 
             <div class="col">
                 <input type="text" id="playerName" maxlength="6" size="5" placeholder="Player">
@@ -25,9 +25,8 @@
             <div class="col">
                 <input type="text" id="oppName" maxlength="6" size="5" placeholder="Opp">
             </div>
-
-            <div class="w-100"></div>
-
+        </div>
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 🏅<input type="number" id="playerWins" value="0" min="0" step="1" max="9">
             </div>
@@ -36,8 +35,9 @@
                 🏅<input type="number" id="oppWins" value="0" min="0" step="1" max="9">
             </div>
 
-            <div class="w-100"></div>
+        </div>
 
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 <button onclick="increment('playerLP', 'stepSize')" class="btn btn-primary w-75">+</button>
             </div>
@@ -45,9 +45,9 @@
             <div class="col">
                 <button onclick="increment('oppLP','stepSize')" class="btn btn-danger w-75">+</button>
             </div>
+        </div>
 
-            <div class="w-100"></div>
-
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 <input type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
@@ -55,9 +55,9 @@
             <div class="col">
                 <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
+        </div>
 
-            <div class="w-100"></div>
-
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 <button onclick="decrement('playerLP')" class="btn btn-primary w-75"> - </button>
             </div>
@@ -65,9 +65,9 @@
             <div class="col">
                 <button onclick="decrement('oppLP')" class="btn btn-danger w-75"> - </button>
             </div>
+        </div>
 
-            <div class="w-100"></div>
-
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
 
             </div>
@@ -79,9 +79,9 @@
             <div class="col">
                 
             </div>
+        </div>
 
-            <div class="w-100"></div>
-
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 <input type="button" onclick="newGame()" value="New Game">
             </div>
@@ -89,9 +89,9 @@
             <div class="col">
                 <input type="button" onclick="newMatch()" value="New Match">
             </div>
+        </div>
 
-            <div class="w-100"></div>
-
+        <div class="row mt-2 justify-content-md-center">
             <div class="col">
                 <p id="playerLog"></p>
             </div>
