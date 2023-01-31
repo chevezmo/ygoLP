@@ -28,11 +28,11 @@
         </div>
         <div class="row mt-2 justify-content-md-center">
             <div class="col">
-                🏅<input type="number" id="playerWins" value="0" min="0" step="1" max="9">
+                <button onclick="increment(`playerWins`)">🏅</button><input type="number" id="playerWins" value="0" min="0" step="1" max="9">
             </div>
 
             <div class="col">
-                🏅<input type="number" id="oppWins" value="0" min="0" step="1" max="9">
+                <button onclick="increment(`oppWins`)">🏅</button><input type="number" id="oppWins" value="0" min="0" step="1" max="9">
             </div>
 
         </div>
@@ -41,23 +41,48 @@
 
         <div class="row mt-2 justify-content-md-center">
             <div class="col">
-                <input type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
+                <input onclick="LPchange(`playerLP`, `playerLog`)" type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
 
             <div class="col">
-                <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
+                <input onclick="LPchange(`oppLP`, `oppLog`)" type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
         </div>
 
         <div class="row mt-2 justify-content-md-center">
 
             <div class="col">
-                <button onclick="decrement('oppLP')" class="btn btn-danger w-50"> + </button>
+                <button id="buttonLPchange" onclick="buttonChange()" class="btn btn-primary w-50">⚔️</button>
             </div>
 
             <div class="col">
-                ⚔️<input type="number" id="stepSize" value="0" min="0" step="1" size="5" max="99999">
+                <input type="number" id="stepSize" value="0" min="0" step="1" size="5" max="99999">
             </div>
+        </div>
+
+        <div class="row mt-2 justify-content-md-center">
+
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+                <button onclick="showNotes()">📝</button>
+            </div>
+
+            
+            <div class="col">
+
+            </div>
+
+        </div>
+        
+        <div class="row mt-2 justify-content-md-center">
+
+            <div class="col">
+                <textarea id="notes" placeholder="Notes" rows="5"></textarea>
+            </div>
+
         </div>
 
         <div class="row mt-2 justify-content-md-center">
@@ -72,11 +97,11 @@
 
         <div class="row mt-2 justify-content-md-center">
             <div class="col">
-                <p id="playerLog"></p>
+                <p id="playerLog">8000</p>
             </div>
 
             <div class="col">
-                <p id="oppLog"></p>
+                <p id="oppLog">8000</p>
             </div>
 
         </div>

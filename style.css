@@ -10,3 +10,7 @@ body {
 #oppLog {
     color: red;
 }
+
+#notes {
+    display: none;
+}
