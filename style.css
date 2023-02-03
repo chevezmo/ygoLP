@@ -3,11 +3,11 @@ body {
     font-size: 22px;
 }
 
-#playerLog {
+#playerLP, #playerLog, #playerWins {
     color: blue;
 }
 
-#oppLog {
+#oppLP, #oppLog, #oppWins {
     color: red;
 }
 

@@ -28,11 +28,24 @@
         </div>
         <div class="row mt-2 justify-content-md-center">
             <div class="col">
-                <button onclick="increment(`playerWins`)">🏅</button><input type="number" id="playerWins" value="0" min="0" step="1" max="9">
+                <button id="playerClick" onclick="increment(`playerWins`)">🏅</button><input type="number" id="playerWins" value="0" min="0" step="1" max="9">
             </div>
 
             <div class="col">
-                <button onclick="increment(`oppWins`)">🏅</button><input type="number" id="oppWins" value="0" min="0" step="1" max="9">
+                <button id="oppClick" onclick="increment(`oppWins`)">🏅</button><input type="number" id="oppWins" value="0" min="0" step="1" max="9">
+            </div>
+
+        </div>
+
+        <div class="row mt-2 justify-content-md-center">
+
+            
+            <div class="col">
+                <button id="playerLPchange❤️" onclick="LPchange(`playerLPchange❤️`,`playerLP`, `playerLog`)" class="btn btn-primary w-75">❤️</button>
+            </div>
+            
+            <div class="col">
+                <button id="oppLPchange❤️" onclick="LPchange(`oppLPchange❤️`,`oppLP`, `oppLog`)" class="btn btn-danger w-75">❤️</button>
             </div>
 
         </div>
@@ -41,41 +54,42 @@
 
         <div class="row mt-2 justify-content-md-center">
             <div class="col">
-                <input onclick="LPchange(`playerLP`, `playerLog`)" type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
+                <input type="number" id="playerLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
 
             <div class="col">
-                <input onclick="LPchange(`oppLP`, `oppLog`)" type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
+                <input type="number" id="oppLP" value="8000" min="0" step="1" max="99999" readonly>
             </div>
         </div>
 
         <div class="row mt-2 justify-content-md-center">
 
+            
             <div class="col">
-                <button id="buttonLPchange" onclick="buttonChange()" class="btn btn-primary w-50">⚔️</button>
+                <button id="playerLPchange⚔️" onclick="LPchange(`playerLPchange⚔️`,`playerLP`, `playerLog`)" class="btn btn-primary w-75">⚔️</button>
+            </div>
+            
+            <div class="col">
+                <button id="oppLPchange⚔️" onclick="LPchange(`oppLPchange⚔️`,`oppLP`, `oppLog`)" class="btn btn-danger w-75">⚔️</button>
             </div>
 
-            <div class="col">
-                <input type="number" id="stepSize" value="0" min="0" step="1" size="5" max="99999">
-            </div>
         </div>
 
         <div class="row mt-2 justify-content-md-center">
 
-            <div class="col">
-
-            </div>
+            
 
             <div class="col">
                 <button onclick="showNotes()">📝</button>
             </div>
 
-            
             <div class="col">
-
+                ⚔️/❤️<input type="number" id="stepSize" value="1000" min="0" step="1" size="5" max="99999">
             </div>
 
         </div>
+
+        
         
         <div class="row mt-2 justify-content-md-center">
 

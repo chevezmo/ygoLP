@@ -15,17 +15,6 @@ function increment(player){
     document.getElementById(`${player}`).stepUp();
 }
 
-function buttonChange(){
-    switch(document.getElementById('buttonLPchange').innerHTML){
-        case '⚔️':
-            document.getElementById('buttonLPchange').innerHTML = '❤️';
-            break;
-        case '❤️':
-            document.getElementById('buttonLPchange').innerHTML = '⚔️';
-            break;
-    }
-}
-
 function showNotes(){
     switch(document.getElementById('notes').style.display){
         case 'block':
@@ -36,19 +25,17 @@ function showNotes(){
     }
 }
 
-function LPchange(player, log){
+function LPchange(clicked, player, log){
     let LP = parseInt(document.getElementById(`${player}`).value);
     let change = parseInt(document.getElementById('stepSize').value) || 0;
-    switch(document.getElementById('buttonLPchange').innerHTML){
+    switch(document.getElementById(`${clicked}`).innerHTML){
         case '❤️':
             document.getElementById(`${player}`).value = LP + change;
-            document.getElementById(`${log}`).innerHTML = document.getElementById(`${log}`).innerHTML + "<br />" + change + " ❤️ "+ (LP + change);
+            document.getElementById(`${log}`).innerHTML = document.getElementById(`${log}`).innerHTML + "<br />" + (LP + change) + " ❤️ "+ (change);
             break;
         case '⚔️':
             document.getElementById(`${player}`).value = LP - change;
-            document.getElementById(`${log}`).innerHTML = document.getElementById(`${log}`).innerHTML + "<br />" + change + " ⚔️ "+ (LP - change) ;
+            document.getElementById(`${log}`).innerHTML = document.getElementById(`${log}`).innerHTML + "<br />" + (LP - change) + " ⚔️ "+ (change) ;
             break;
-        default:
-            document.getElementById(`${player}`).value;
     }
 }
